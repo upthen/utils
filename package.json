@@ -1,0 +1,36 @@
+{
+  "name": "@upthen/utils",
+  "version": "1.0.1",
+  "description": "Upthen's Frequently Used Utils",
+  "main": "dist/index.js",
+  "type": "module",
+  "module": "dist/index.mjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "prettier": "@upthen/prettier-config",
+  "keywords": [
+    "lodash-es",
+    "dayjs",
+    "utils"
+  ],
+  "author": "Robert Zeng",
+  "license": "MIT",
+  "dependencies": {
+    "@upthen/prettier-config": "^1.0.0",
+    "dayjs": "^1.11.11",
+    "lodash-es": "^4.17.21",
+    "rimraf": "^5.0.7",
+    "rollup": "^4.18.0"
+  }
+}
